@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "willow",
-  "name": "Mint Starter Kit",
+  "name": "Vita User Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#00a94f",
+    "light": "#00a94f",
+    "dark": "#00a94f"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/icons/vita-leaf.svg",
   "navigation": {
     "tabs": [
       {
@@ -84,8 +84,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logos/vitaone-on-white.svg",
+    "dark": "/logos/vitaone-on-black.svg"
   },
   "navbar": {
     "links": [
