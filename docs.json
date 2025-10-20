@@ -19,7 +19,14 @@
               "getting-started/index",
               "getting-started/frequently-asked-questions",
               "getting-started/development",
+              "getting-started/glossary",
               "platform"
+            ]
+          },
+          {
+            "group": "How-to guides",
+            "pages": [
+              "how-to/create-form"
             ]
           },
           {
@@ -116,9 +123,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://ca.linkedin.com/company/intellimedia-ca"
     }
   }
 }
