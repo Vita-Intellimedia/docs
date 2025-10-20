@@ -1,0 +1,91 @@
+---
+title: 'Documentation Platforms'
+description: 'A comparison of available platforms for managing our user documentation'
+icon: 'file-lines'
+---
+
+## Overview
+
+We evaluated four leading documentation platforms to find the best fit for our needs. Below is a detailed comparison of their features, pricing, and capabilities.
+
+<CardGroup cols={2}>
+  <Card title="GitBook" icon="book" href="https://www.gitbook.com/">
+    Hosted documentation with native Git sync
+  </Card>
+  <Card title="Mintlify" icon="sparkles" href="https://www.mintlify.com/">
+    Modern docs with AI-powered features
+  </Card>
+  <Card title="Docusaurus" icon="code" href="https://docusaurus.io/">
+    React-based static site generator
+  </Card>
+  <Card title="Fumadocs" icon="rocket" href="https://fumadocs.dev/">
+    Next.js documentation framework
+  </Card>
+</CardGroup>
+
+## Feature Comparison
+
+<Note>
+  The table below provides a side-by-side comparison of key features across all platforms.
+</Note>
+
+| Platform | GitLab Integration | Simplicity | Scalability | Price | AI Features | Analytics |
+| -------- | ------------------ | ---------- | ----------- | ----- | ----------- | --------- |
+| **GitBook** | Native bi-directional Git Sync with GitLab | Very simple hosted editor with optional Git sync | SaaS scales; content portable via Git sync | **$249**/mo (Ultimate) | AI-powered instant answers and AI Assistant | ✅ [Insights dashboard](https://gitbook.com/docs/publishing-documentation/insights) |
+| **Mintlify** | Official GitLab integration via access token + webhooks | Quickstart CLI + web editor | Builds from Git repo; fully portable MDX | **$250**/mo (Pro) | Chat assistant, writing agent, styling checks | ✅ [Insights overview](https://www.mintlify.com/docs/insights/overview) |
+| **Docusaurus** | Native support for GitLab CI and Pages | Developer-owned; requires setup | Fully portable; host anywhere | **Free** | No built-in AI; can integrate Algolia DocSearch | Via plugins (Google Analytics) |
+| **Fumadocs** | Works with GitLab CI and any host | Code-driven; best for Next.js teams | Static/SSG output; easy to deploy | **Free** | No built-in AI; integrates with Algolia/Orama | Integrate GA or hosting analytics |
+
+<Info>
+  **Pricing as of October 20, 2025**. Prices are subject to change.
+</Info>
+
+## Resources
+
+<AccordionGroup>
+  <Accordion title="GitBook">
+    - [Pricing](https://www.gitbook.com/pricing)
+    - [Git Sync Documentation](https://docs.gitbook.com/integrations/git-sync)
+  </Accordion>
+  
+  <Accordion title="Mintlify">
+    - [GitLab Integration Guide](https://www.mintlify.com/docs/deploy/gitlab)
+    - [Pricing](https://www.mintlify.com/pricing)
+  </Accordion>
+  
+  <Accordion title="Docusaurus">
+    - [Deployment Guide](https://docusaurus.io/docs/deployment)
+  </Accordion>
+  
+  <Accordion title="Fumadocs">
+    - [Official Documentation](https://fumadocs.dev/)
+  </Accordion>
+</AccordionGroup>
+
+## Recommendation
+
+<Check>
+  **Our Choice: Mintlify**
+</Check>
+
+Mintlify offers the most balanced solution for our authoring and docs-repo workflows. Here's why:
+
+<AccordionGroup>
+  <Accordion title="✅ Strengths" icon="circle-check">
+    - **GitLab Integration**: Official support via access tokens and webhooks
+    - **Merge Request Previews**: Automatic preview builds for every MR
+    - **AI-Powered Features**: Chat assistant, writing agent, and styling checks
+    - **Developer-Friendly**: Content lives in Git as portable MDX files
+    - **Modern Experience**: Clean UI with excellent DX
+  </Accordion>
+  
+  <Accordion title="⚠️ Considerations" icon="circle-exclamation">
+    - **Code-Aware AI Limitations**: Advanced features (using production codebase as context, opening change requests) require the GitHub App
+    - **Migration Path**: To unlock full code-aware AI capabilities, we'd need to migrate or mirror application repositories to GitHub
+    - **Current State**: With GitLab, we still get the hosted editor, site, and AI assistance over docs content
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  Even without GitHub integration, Mintlify provides excellent value through its GitLab support, hosted infrastructure, and AI-assisted writing capabilities.
+</Tip>

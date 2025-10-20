@@ -1,0 +1,211 @@
+---
+title: 'Contributing Guidelines'
+description: 'Best practices and standards for creating and maintaining user documentation'
+icon: 'users'
+---
+
+<Info>
+  These guidelines ensure our documentation remains consistent, maintainable, and valuable for all users.
+</Info>
+
+## Documentation Philosophy
+
+Great documentation is essential for user success and reduces support burden. Follow these principles to create documentation that serves both technical and non-technical audiences effectively.
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="1. Write Just Enough Documentation" icon="balance-scale" defaultOpen>
+    - Find the balance between lack of and excessive documentation
+    - Don't repeat information across multiple documents
+    - Focus on what users need to succeed, not everything that's possible
+    
+    <Tip>
+      If you find yourself repeating content, consider using [reusable snippets](/essentials/reusable-snippets) instead.
+    </Tip>
+  </Accordion>
+
+  <Accordion title="2. Consider Your Audience" icon="users">
+    - **Keep it simple**: Write for clarity and ease of understanding
+    - **Provide navigation**: Include a clear table of contents
+    - **Be concise**: Avoid long blocks of text—no one likes reading more than necessary
+    - **Use visual content**: Include tables, graphs, charts, and diagrams
+    - **Define technical terms**: Link to glossaries or provide clear definitions
+    
+    <Warning>
+      Our audience includes non-technical users. Always provide context and avoid jargon.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="3. Use Cross-Links" icon="link">
+    - Link to related documentation, product pages, and user guides
+    - Help users build complete understanding through intuitive navigation
+    - Create a seamless documentation experience
+    
+    ```mdx
+    // Example: Linking to related content
+    For more details, see [API Reference](/api-reference/introduction) 
+    or [Local Development Setup](/getting-started/development).
+    ```
+  </Accordion>
+
+  <Accordion title="4. Leverage Glossaries" icon="book-bookmark">
+    - Provide clear explanations for each technical term
+    - Define specific meanings within the context of your project
+    - **Critical for non-technical audiences** who need to understand domain-specific terminology
+    
+    <Note>
+      Consider creating a dedicated glossary page for frequently used terms.
+    </Note>
+  </Accordion>
+
+  <Accordion title="5. Keep Documentation Up to Date" icon="arrows-rotate">
+    - Update documentation when code changes during development
+    - Out-of-date docs create confusion and increase support requests
+    - Ensure systematic updates through CI/CD processes
+    
+    <Steps>
+      <Step title="Document changes in MRs">
+        Include documentation updates in every merge request that affects user-facing features
+      </Step>
+      <Step title="Review during code review">
+        Verify documentation accuracy as part of the code review process
+      </Step>
+      <Step title="Automated publishing">
+        CI/CD pipeline automatically deploys approved changes
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="6. Prioritize Teamwork" icon="people-group">
+    - Collaborate with team members and subject matter experts
+    - Ensure complete, cohesive understanding of software functionality
+    - Get feedback and technical verification for accuracy
+    
+    <Card title="Documentation Review Process" icon="clipboard-check">
+      Treat documentation reviews similarly to code reviews—multiple eyes ensure quality and accuracy.
+    </Card>
+  </Accordion>
+
+  <Accordion title="7. Pay Attention to Details" icon="magnifying-glass">
+    - Proofread documentation multiple times
+    - Have multiple team members review for clarity and accuracy
+    - Follow a similar approval process to merge requests
+    - Check for consistent formatting and tone
+  </Accordion>
+
+  <Accordion title="8. Be Strategic with Screenshots & Multimedia" icon="camera">
+    While visual media enhances user experience, it requires careful consideration:
+    
+    **Challenges:**
+    - Difficult to update and maintain
+    - Quickly becomes outdated with UI changes
+    - Requires additional tooling and processes
+    
+    **Guidelines:**
+    - Reserve for features that are near-final and stable
+    - Document the process for creating and updating media
+    - Establish a tech stack that makes updates streamlined
+    
+    <Warning>
+      Only add screenshots for features unlikely to change significantly. Text descriptions are easier to maintain.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="9. Pair Documentation with Source Code" icon="code-merge">
+    - Keep documentation close to the code it describes
+    - Makes it easier to update both simultaneously
+    - Reduces the chance of documentation drift
+    
+    <Info>
+      Our documentation lives in the same GitLab organization as our source code, making it easy to link changes.
+    </Info>
+  </Accordion>
+
+  <Accordion title="10. Documentation Control" icon="list-check">
+    Maintain proper governance over documentation:
+    - Version control through Git
+    - Clear procedures for updates and approvals
+    - Appropriate access controls
+    - Systematic organization and navigation structure
+  </Accordion>
+
+  <Accordion title="11. Consider a Technical Writer Role" icon="pen-fancy">
+    As the company grows, consider:
+    - Assigning or hiring a dedicated technical writer
+    - Enforcing documentation standards consistently
+    - Monitoring analytics (What pages do users visit most?)
+    - Identifying documentation gaps
+    - Improving content based on user behavior
+  </Accordion>
+
+  <Accordion title="12. Leverage Document Management System" icon="sparkles">
+    We've chosen **Mintlify** as our documentation platform:
+    
+    <CardGroup cols={2}>
+      <Card title="Simple Web Interface" icon="browser">
+        Easy-to-use editor frees developers to focus on product development
+      </Card>
+      <Card title="AI-Native Platform" icon="brain">
+        Built for developers with AI assistance for quick updates
+      </Card>
+      <Card title="MDX Support" icon="markdown">
+        Write in familiar Markdown with React component support
+      </Card>
+      <Card title="Agile Integration" icon="diagram-project">
+        Integrates seamlessly with GitLab and our development workflow
+      </Card>
+    </CardGroup>
+    
+    <Note>
+      [Mintlify Agent](https://www.mintlify.com/blog/agents-launch) can help update docs based on context from MCP servers and merge requests.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+## Quick Reference
+
+<CardGroup cols={3}>
+  <Card title="Local Development" icon="laptop-code" href="/getting-started/development">
+    Set up your local environment
+  </Card>
+  <Card title="MDX Guide" icon="file-code" href="/essentials/markdown">
+    Learn MDX formatting
+  </Card>
+  <Card title="Navigation Setup" icon="sitemap" href="/essentials/navigation">
+    Configure site structure
+  </Card>
+  <Card title="Code Samples" icon="code" href="/essentials/code">
+    Add code examples
+  </Card>
+  <Card title="Images & Media" icon="image" href="/essentials/images">
+    Work with visual content
+  </Card>
+  <Card title="Reusable Snippets" icon="recycle" href="/essentials/reusable-snippets">
+    Create reusable content
+  </Card>
+</CardGroup>
+
+## Getting Started
+
+<Steps>
+  <Step title="Review the guidelines above">
+    Familiarize yourself with our documentation standards and best practices
+  </Step>
+  <Step title="Set up your local environment">
+    Follow the [development guide](/getting-started/development) to edit docs locally
+  </Step>
+  <Step title="Create or update content">
+    Write clear, concise documentation following our standards
+  </Step>
+  <Step title="Submit for review">
+    Create a merge request and get feedback from team members
+  </Step>
+  <Step title="Publish">
+    Once approved, merge to main and the CI/CD pipeline will publish automatically
+  </Step>
+</Steps>
+
+<Check>
+  **Ready to contribute?** Start by exploring existing documentation to understand our style and structure.
+</Check>
