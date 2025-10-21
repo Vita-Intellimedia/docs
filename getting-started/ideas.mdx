@@ -1,0 +1,66 @@
+---
+title: 'Ideas going forward'
+description: 'Questions and ideas for the future of docs'
+icon: 'question-circle'
+---
+
+Here are some ideas and questions for the future of the docs site.
+
+## UI Component Package
+
+Should we export UI elements as a package in a private registry? This would help keep design consistent across docs as each component will be updated whenever VitaOne is updated.
+
+For example, we could have a button component that is imported from `@vita/ui` and used in MDX files. This approach would:
+
+- Show users exactly which button component we're referencing
+- Ensure components stay up-to-date as we change things in VitaOne
+- Maintain visual and behavioral consistency across all documentation
+
+<Tip>
+  A private package registry would create a single source of truth for UI components, reducing maintenance overhead and improving documentation accuracy.
+</Tip>
+
+## Mirroring VitaOne's Repo onto GitHub
+
+Should we mirror VitaOne's main repository onto GitHub? This would enable us to leverage Mintlify's AI context features to help generate and automatically update documentation based on code changes.
+
+### Benefits of Mirroring:
+
+- **AI-Powered Documentation** - Mintlify can analyze code changes and suggest documentation updates
+- **Automated Content Generation** - Reduce manual effort in keeping docs synchronized with code
+- **Better Context** - AI tools have access to complete codebase for more accurate documentation
+- **Dual-Source Flexibility** - Maintain GitLab as source of truth while leveraging GitHub ecosystem benefits
+
+<Warning>
+  This approach requires maintaining synchronization between GitLab and GitHub repositories to prevent divergence.
+</Warning>
+
+## Repository Location Strategy
+
+Should the docs repository live in the same GitLab group as VitaOne's code, or in a separate GitHub repository?
+
+### Option 1: Unified GitLab Location
+
+**Pros:**
+- Simpler organizational structure
+- Combined commits for related code and documentation changes
+- Single source of truth in one location
+
+**Cons:**
+- Would require mirroring to GitHub for Mintlify's AI features
+- Additional maintenance overhead for synchronization
+
+### Option 2: Separate GitHub Repository
+
+**Pros:**
+- Direct integration with Mintlify's AI and publishing features
+- Independent deployment and update cycles
+- Simplified GitHub mirror setup
+
+**Cons:**
+- Separate repository management
+- Coordination needed between code and documentation updates
+
+<Tip>
+  Consider the primary workflow: if documentation updates often coincide with code releases, a unified location may be preferable. If docs are updated independently, a separate repo provides more flexibility.
+</Tip>
